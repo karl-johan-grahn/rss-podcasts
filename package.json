@@ -1,0 +1,31 @@
+{
+  "name": "rss-podcasts",
+  "version": "1.0.0",
+  "description": "RSS podcast parser",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_PATH=src node index.js",
+    "test": "cross-env NODE_PATH=src mocha test",
+    "dev": "cross-env NODE_PATH=src nodemon index.js"
+  },
+  "author": "Karl-Johan Grahn",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "chai-http": "^4.2.0",
+    "cross-env": "^5.1.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.5"
+  },
+  "dependencies": {
+    "id3-parser": "^2.0.0",
+    "koa": "^2.3.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-hal": "^2.1.0",
+    "koa-router": "^7.2.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "rss-parser": "^3.5.2",
+    "sums": "^1.0.0"
+  }
+}
